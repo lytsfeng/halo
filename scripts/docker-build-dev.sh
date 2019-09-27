@@ -1,4 +1,4 @@
-#!/bin/bash
+ #!/bin/bash
 
 VERSION=$(ls build/libs | sed 's/.*halo-//' | sed 's/.jar$//')
 

@@ -578,6 +578,7 @@ public class ThemeServiceImpl implements ThemeService {
 
         try {
             git = GitUtils.openOrInit(Paths.get(themeProperty.getThemePath()));
+
             // Force to set remote name
             git.remoteRemove().setRemoteName(THEME_PROVIDER_REMOTE_NAME).call();
             RemoteConfig remoteConfig = git.remoteAdd()
